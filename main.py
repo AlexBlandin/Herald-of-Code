@@ -6,6 +6,13 @@ import pytomlpp as toml
 import pendulum
 import discord
 
+setup = toml.load(Path("setup.toml"))
+assert ("servers" in setup)
+assert (len(setup.servers) == 1)
+assert (isinstance(setup.servers[0], int))
+assert ("token" in setup)
+assert (isinstance(setup.token, str))
+
 logging.basicConfig(
   filename = "main.log",
   format = "{asctime} {name} {levelname}: {message}",
@@ -15,16 +22,16 @@ logging.basicConfig(
 )
 logger = logging.getLogger("main")
 
-intents = discord.Intents.default()
-intents.message_content = True
+bot = discord.Bot()
 
-client = discord.Client(intents = intents)
-
-@client.event
+@bot.event
 async def on_ready():
-  logging.info(f"We have logged in as {client.user}")
-  # await client.change_presence(activity = discord.CustomActivity("Blah"))
-  await client.change_presence(activity = discord.Game(name = "Selecting a quote!"))
+  logging.info(f"We have logged in as {bot.user}")
+  await bot.change_presence(activity = discord.Game(name = "Heralding the Code!"))
+
+@bot.slash_command(guild_only = True, guild_ids = setup.servers)
+async def hello(ctx: discord.ApplicationContext):
+  await ctx.respond("Hello!")
 
 if __name__ == "__main__":
-  client.run(Path("token.txt").read_text())
+  bot.run(setup.token)
