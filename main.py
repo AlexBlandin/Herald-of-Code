@@ -5,7 +5,6 @@ import pytomlpp as toml
 import pendulum
 import discord
 
-# Variables and stuff
 intents = discord.Intents.default()
 intents.message_content = True
 
