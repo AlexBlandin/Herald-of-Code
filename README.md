@@ -16,6 +16,8 @@ Ideally, in the long term, integration with existing platforms like Advent of Co
 
 While we may have standard AoC style problems with just a description and examples, we'll also have "scary code" problems where you must debug example code to get the right output. For the sake of people, we'll provide difficulty ratings, and by default we'll unlock from lowest to highest (on consecutive days).
 
+For each Forum, they may fit a certain "class" which is the kind of tags they will provide for problems. `Scary Code` gives `Use after free`, `Memory error`, `Arithmetic error`, etc. while `Solve Code` gives `Combinatorics`, `Grids`, `Bots`, `Scheduling`, etc. as pleased. We'll probably just bake them in, and when you assign tags to the problem, you can always just add more manually to the forum and problems (if you've added it to the forum, then the bot can probably find and add it by the same `["Tag name", "Tag name", ...]` method as for adding normal tags).
+
 ![How our files are architected](sketches/file%20structure.png)
 
 Different events or stand-alone problems will be different TOML files in `./problems/`, such as `./problems/swacktober-2022.toml`.
