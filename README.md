@@ -2,6 +2,8 @@
 
 A Discord Bot for setting up your own [Advent of Code](https://adventofcode.com) styled events!
 
+If there's any questions, please make use of the Discussions page!
+
 ![Inspired by this chat](inspiration.png)
 
 Users will use modern discord interactions and `/<command>`s in a problem's thread to request the problem description (just for them, not visible to anyone else) and their personal input (again, not visible to anyone else), and then be able to post their outputs (only visible when they got it correct, alongside their leaderboard position on this problem and for the event). They can also ask for the leaderboard in general, both for a problem and for an entire event. Unlocked problems will be freely available, no "you must first solve day 1 to start day 2", and events can be set to either unlock all problems at the start ("freestyle", like Project Euler) or (by default) unlock as they go (so people can pick and choose). Prior to this, you only unlock at the rate of completion, or when the problem is available, whichever comes later.
