@@ -1,0 +1,3 @@
+Toml file in here containing a players record? One per person.
+
+Since nothing is at all confidential and th plan is to use UUID they could be UUID.toml
