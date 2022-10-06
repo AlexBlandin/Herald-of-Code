@@ -6,12 +6,14 @@ import pytomlpp as toml
 import pendulum
 import discord
 
+# this file is where we do the actual plumbing of Herald
+
 setup = toml.load(Path("setup.toml"))
-assert ("servers" in setup)
-assert (len(setup.servers) == 1)
-assert (isinstance(setup.servers[0], int))
-assert ("token" in setup)
-assert (isinstance(setup.token, str))
+assert "servers" in setup
+assert len(setup.servers) == 1
+assert isinstance(setup.servers[0], int)
+assert "token" in setup
+assert isinstance(setup.token, str)
 
 logging.basicConfig(
   filename = "main.log",
