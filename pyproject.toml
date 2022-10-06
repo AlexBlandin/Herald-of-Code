@@ -9,6 +9,8 @@ python = "^3.10"
 py-cord = "^2.0.0"
 pytomlpp = "^1.0.10"
 pendulum = "^2.1.2"
+# schedule = "^1.1.0"
+# pytz = "^2022.4"
 
 [tool.poetry.group.dev.dependencies]
 pylint = "^2.14.5"

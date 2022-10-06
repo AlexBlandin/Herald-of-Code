@@ -20,7 +20,7 @@ logging.basicConfig(
   level = logging.DEBUG,
   encoding = "utf8"
 )
-logger = logging.getLogger("main")
+logger = logging.getLogger("herald")
 
 bot = discord.Bot()
 
