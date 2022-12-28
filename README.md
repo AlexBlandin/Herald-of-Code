@@ -2,7 +2,7 @@
 
 A Discord Bot for setting up your own [Advent of Code](https://adventofcode.com) styled events!
 
-If there's any questions, please make use of the Discussions page!
+The Discussions page has been disabled as GitHub does not enable appropriate moderation tools to ensure safe discourse.
 
 ![Inspired by this chat](inspiration.png)
 
