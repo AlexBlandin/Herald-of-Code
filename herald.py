@@ -1,8 +1,8 @@
-from pathlib import Path
 import logging
+from pathlib import Path
 
-import pytomlpp as toml
 import discord
+import pytomlpp as toml
 
 # this file is where we do the actual plumbing of Herald
 
