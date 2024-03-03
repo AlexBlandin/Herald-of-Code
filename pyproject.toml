@@ -3,6 +3,7 @@ name = "Herald of Code"
 version = "0.1.0"
 description = "A Discord Bot for setting up your own Advent of Code styled events!"
 authors = ["AlexBlandin"]
+package-mode = false
 
 [tool.poetry.dependencies]
 python = "^3.10"
