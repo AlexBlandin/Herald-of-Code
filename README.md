@@ -47,3 +47,7 @@ servers = [1234567890]
 While servers is a list, please only put the one in. Yes, it's plural, and yes, you can put more in. Please don't. As the code is, it'd probably break, since that's not something I've tested. You are welcome to fork/PR it.
 
 I'm not fussed, so like Swack Quote, this will be something you're expected to run yourself, so have a separate bot per server. Sorry, I just don't need anything more complicated, but if you'd like to improve, feel free to fork/PR it. Having per-server `./<server>/problems/` & `./<server>/users/` directories is a clean approach if you want my recommendation.
+
+## Requirements
+- [`pip install -r requirements.txt`](https://www.python.org/)
+  - [regenerate with `uv pip compile pyproject.toml -o requirements.txt`](https://github.com/astral-sh/uv)
