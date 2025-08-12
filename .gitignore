@@ -1,6 +1,8 @@
 # Bot
 setup.toml
 
+*.code-workspace
+
 # ---> Python
 requirements.txt
 requirements-*.txt
