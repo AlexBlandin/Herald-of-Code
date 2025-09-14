@@ -6,10 +6,10 @@ readme = "README.md"
 requires-python = ">=3.11"
 license = "MIT"
 authors = [{ name = "AlexBlandin" }]
-dependencies = ["py-cord", "whenever", "schedule", "pytz", "attrs", "cattrs"]
+dependencies = ["py-cord", "whenever", "schedule", "pytz", "attrs", "cattrs", "rtoml"]
 
 [project.optional-dependencies]
-dev = ["ruff", "pdbp", "basedmypy", "basedpyright"]
+dev = ["ruff"]
 
 [project.urls]
 Documentation = "https://github.com/alexblandin/Herald-of-Code#readme"

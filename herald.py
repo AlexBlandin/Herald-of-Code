@@ -8,11 +8,11 @@ import logging
 from pathlib import Path
 
 import discord
-import pytomlpp as toml
+import rtoml
 
 # this file is where we do the actual plumbing of Herald
 
-setup = toml.load(Path("setup.toml"))
+setup = rtoml.load(Path("setup.toml"))
 
 logging.basicConfig(
   filename="main.log", format="{asctime} {name} {levelname}: {message}", style="{", level=logging.DEBUG, encoding="utf8"
@@ -34,4 +34,4 @@ async def hello(ctx: discord.ApplicationContext) -> None:  # noqa: D103
 
 
 if __name__ == "__main__":
-  bot.run(setup.token)
+  bot.run(setup["token"])
